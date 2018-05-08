@@ -1,5 +1,5 @@
 <?php
-if(Mage::getStoreConfig('zero1_gdpr/options/enabled'))
+if(Mage::getStoreConfig('bpmedia_gdpr/options/enabled'))
 {
 	?>
 <div id="cookiealert" class="cookiealert" style="display: none;">
@@ -37,7 +37,7 @@ function declineCookieAlert() {
 
 function loadCookieScript() {
 <?php
-$gtmContainerId = Mage::getStoreConfig('zero1_gdpr/configuration/gtm_container_id');
+$gtmContainerId = Mage::getStoreConfig('bpmedia_gdpr/configuration/gtm_container_id');
 if (!empty($gtmContainerId)) {
     ?>
     var script = document.createElement('script');

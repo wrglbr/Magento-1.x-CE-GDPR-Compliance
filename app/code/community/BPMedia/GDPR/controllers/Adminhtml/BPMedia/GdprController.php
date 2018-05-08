@@ -1,11 +1,11 @@
 <?php
-class Zero1_GDPR_Adminhtml_Zero1_GdprController extends Mage_Adminhtml_Controller_Action
+class BPMedia_GDPR_Adminhtml_Zero1_GdprController extends Mage_Adminhtml_Controller_Action
 {
     /**
      * Delete customer admin action
      */
     public function deleteCustomerAction() {
-        if (!Mage::helper('zero1_gdpr')->isEnabled()) {
+        if (!Mage::helper('bpmedia_gdpr')->isEnabled()) {
             return;
         }
 
@@ -16,7 +16,7 @@ class Zero1_GDPR_Adminhtml_Zero1_GdprController extends Mage_Adminhtml_Controlle
             return;
         }
 
-        Mage::getModel('zero1_gdpr/accountdeletion')->anonymiseCustomer($customer);
+        Mage::getModel('bpmedia_gdpr/accountdeletion')->anonymiseCustomer($customer);
 
         $this->_redirect('adminhtml/customer/index');
         Mage::getSingleton('core/session')->addSuccess('The account has been successfully deleted, and all orders have been anonymised.');
@@ -27,7 +27,7 @@ class Zero1_GDPR_Adminhtml_Zero1_GdprController extends Mage_Adminhtml_Controlle
      * Send anonymise email admin action
      */
     public function sendAnonymiseEmailAction() {
-        if (!Mage::helper('zero1_gdpr')->isEnabled()) {
+        if (!Mage::helper('bpmedia_gdpr')->isEnabled()) {
             return;
         }
 
@@ -39,12 +39,12 @@ class Zero1_GDPR_Adminhtml_Zero1_GdprController extends Mage_Adminhtml_Controlle
         }
 
         /** @var Mage_Core_Model_Email_Template $email */
-        $email = Mage::getModel('core/email_template')->loadDefault('zero1_gdpr_confirm');
+        $email = Mage::getModel('core/email_template')->loadDefault('bpmedia_gdpr_confirm');
         if ($email->getId()) {
             $email->sendTransactional($email->getId(), 'sales', $customer->getEmail(), $customer->getName(), array(
                 'email' => $customer->getEmail(),
                 'name' => $customer->getName(),
-                'link' => Mage::getUrl('zero1_gdpr/customer/deleteaccount')
+                'link' => Mage::getUrl('bpmedia_gdpr/customer/deleteaccount')
             ), 0);
         }
 
@@ -59,6 +59,6 @@ class Zero1_GDPR_Adminhtml_Zero1_GdprController extends Mage_Adminhtml_Controlle
      */
     protected function _isAllowed()
     {
-        return Mage::getSingleton('admin/session')->isAllowed('zero1_gdpr');
+        return Mage::getSingleton('admin/session')->isAllowed('bpmedia_gdpr');
     }
 }

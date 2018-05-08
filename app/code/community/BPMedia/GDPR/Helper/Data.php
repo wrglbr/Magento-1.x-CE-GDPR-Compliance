@@ -1,9 +1,9 @@
 <?php
-class Zero1_GDPR_Helper_Data extends Mage_Core_Helper_Abstract
+class BPMedia_GDPR_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    const XML_PATH_GDPR_ENABLED = 'zero1_gdpr/configuration/enabled';
-    const XML_PATH_INFORMATION_PAGE = 'zero1_gdpr/configuration/cms_page';
-    const XML_PATH_GDPR_SUCCESSMESSAGE = 'zero1_gdpr/configuration/successmessage';
+    const XML_PATH_GDPR_ENABLED = 'bpmedia_gdpr/configuration/enabled';
+    const XML_PATH_INFORMATION_PAGE = 'bpmedia_gdpr/configuration/cms_page';
+    const XML_PATH_GDPR_SUCCESSMESSAGE = 'bpmedia_gdpr/configuration/successmessage';
 
     public function isEnabled()
     {

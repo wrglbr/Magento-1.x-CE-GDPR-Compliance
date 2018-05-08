@@ -1,5 +1,5 @@
 <?php
-class Zero1_GDPR_Model_AccountDeletion
+class BPMedia_GDPR_Model_AccountDeletion
 {
     /**
      * Remove customer details from the address
@@ -67,7 +67,7 @@ class Zero1_GDPR_Model_AccountDeletion
 
         // Send confirmation to customer
         /** @var Mage_Core_Model_Email_Template $email */
-        $email = Mage::getModel('core/email_template')->loadDefault('zero1_gdpr_success');
+        $email = Mage::getModel('core/email_template')->loadDefault('bpmedia_gdpr_success');
         if ($email->getId()) {
             $email->sendTransactional($email->getId(), 'sales', $customer->getEmail(), $customer->getName(), array(
                 'email' => $customer->getEmail(),

@@ -8,9 +8,9 @@
                         <children>
                             <config>
                                 <children>
-                                    <zero1_gdpr translate="title" module="zero1_gdpr">
+                                    <bpmedia_gdpr translate="title" module="bpmedia_gdpr">
                                         <title>General Data Protection Regulation</title>
-                                    </zero1_gdpr>
+                                    </bpmedia_gdpr>
                                 </children>
                             </config>
                         </children>

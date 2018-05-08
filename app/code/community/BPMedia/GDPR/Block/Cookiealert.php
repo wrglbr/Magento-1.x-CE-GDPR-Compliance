@@ -1,5 +1,5 @@
 <?php
-class Zero1_GDPR_Block_Cookiealert extends Mage_Core_Block_Template
+class BPMedia_GDPR_Block_Cookiealert extends Mage_Core_Block_Template
 {
 	protected $_cookiealert;
 	
@@ -7,7 +7,7 @@ class Zero1_GDPR_Block_Cookiealert extends Mage_Core_Block_Template
 	{
         parent::_prepareLayout();
         
-		$this->_cookiealert = Mage::getSingleton('zero1_gdpr/cookiealert');
+		$this->_cookiealert = Mage::getSingleton('bpmedia_gdpr/cookiealert');
 	}
 
     public function getCmsPageUrl()

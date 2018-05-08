@@ -1,5 +1,5 @@
 <?php
-class Zero1_GDPR_Model_Observer
+class BPMedia_GDPR_Model_Observer
 {
     /**
      * Add buttons to the customer edit page showing the delete and e-mail options
@@ -11,7 +11,7 @@ class Zero1_GDPR_Model_Observer
             return;
         }
 
-        if (!Mage::helper('zero1_gdpr')->isEnabled()) {
+        if (!Mage::helper('bpmedia_gdpr')->isEnabled()) {
             return;
         }
 
@@ -22,7 +22,7 @@ class Zero1_GDPR_Model_Observer
 
         // Delete link
         $location = Mage::helper('adminhtml')->getUrl(
-            'adminhtml/zero1_gdpr/deletecustomer',
+            'adminhtml/bpmedia_gdpr/deletecustomer',
             array('id' => $customer->getId())
         );
         $data = array(
@@ -33,7 +33,7 @@ class Zero1_GDPR_Model_Observer
 
         // E-mail link
         $location = Mage::helper('adminhtml')->getUrl(
-            'adminhtml/zero1_gdpr/sendAnonymiseEmail',
+            'adminhtml/bpmedia_gdpr/sendAnonymiseEmail',
             array('id' => $customer->getId())
         );
         $data = array(
