@@ -1,0 +1,3 @@
+app/code/community/BPMedia/GDPR/ app/code/community/BPMedia/GDPR/
+app/design/frontend/base/default/ app/design/frontend/base/default/
+app/etc/modules/BPMedia_GDPR.xml app/etc/modules/BPMedia_GDPR.xml
