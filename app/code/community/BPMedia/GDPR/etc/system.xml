@@ -2,7 +2,7 @@
 <config>
     <sections>
         <bpmedia_gdpr translate="label" module="bpmedia_gdpr">
-            <label>BPMedia GDPR</label>
+            <label>GDPR Compliance</label>
             <tab>customer</tab>
             <frontend_type>text</frontend_type>
             <sort_order>110</sort_order>
