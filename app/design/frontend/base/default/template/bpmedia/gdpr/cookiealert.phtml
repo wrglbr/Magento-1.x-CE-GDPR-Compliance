@@ -6,13 +6,13 @@ if(Mage::getStoreConfig('bpmedia_gdpr/options/enabled'))
 	<div class="message">
 		<span class="cookie-title"><?php echo $this->__('Cookie Policy');?></span>
 		<p>
-	    	<?php echo $this->__('This website uses cookies to ensure proper functionality of the shopping cart and checkout progress. By continuing to browse the site you are agreeing to the use of cookies.');?>
+	    	<?php echo $this->__('This website (WatchCo.com) uses cookies to ensure proper functionality of our shopping cart and checkout progress. By continuing to browse the site you are agreeing to the use of cookies.');?>
 	    	<a href="<?php echo $this->getCmsPageUrl(); ?>"><?php echo $this->__('Click here to learn about cookie settings.'); ?></a>
 		</p>
-		<p class="accept">
+		<p class="accept" style="width: 50%; display: inline-block;">
 			<a href="javascript:acceptCookieAlert();"><?php echo $this->__('Accept');?></a>
 		</p>
-		<p class="decline">
+		<p class="decline" style="width: 50%; display: inline-block;">
 			<a href="javascript:declineCookieAlert();"><?php echo $this->__('Decline');?></a>
 		</p>
 	</div>
