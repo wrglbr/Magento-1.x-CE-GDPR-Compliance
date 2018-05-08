@@ -1,4 +1,4 @@
-# Magento 1.x CE GDPR 
+# Magento 1.x CE GDPR Compliance
 
 ## Overview
 GDPR compliance is a worry for many businesses based in the EU. This free extension supports Cookie Compliance and Customer Data Anonymisation. The GDPR Complicance module for Magento 1 adds some key features to aid your support in meeting the requirements set out in the new General Data Protection Regulation (GDPR) legislation which comes into effect throughout the EU on 25 May 2018. Key requirements under the new legislation include the removal of customer data on request.
@@ -21,7 +21,7 @@ Magento Core code does not currently facilitate this therefore all sites without
  ```
  
  ### Manual installation
- * [Download the extension from Github](https://github.com/wrglbr/Magento1_GDPR/archive/master.zip)
+ * [Download the extension from Github](https://github.com/wrglbr/Magento-1.x-CE-GDPR-Compliance/archive/master.zip)
  * Drag and drop into your web directory
 
 ## Acknowledgments
