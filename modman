@@ -1,5 +1,6 @@
 app/code/community/BPMedia/GDPR/ app/code/community/BPMedia/GDPR/
-app/design/frontend/base/default/ app/design/frontend/base/default/
+app/design/frontend/base/default/template/bpmedia/ app/design/frontend/base/default/template/bpmedia/
+app/design/frontend/base/default/layout/bpmedia/ app/design/frontend/base/default/layout/bpmedia/
 app/etc/modules/BPMedia_GDPR.xml app/etc/modules/BPMedia_GDPR.xml
 app/locale/en_US/template/email/bpmedia/gdpr/ app/locale/en_US/template/email/bpmedia/gdpr/
 skin/frontend/base/default/css/bpmedia/gdpr/ skin/frontend/base/default/css/bpmedia/gdpr/
