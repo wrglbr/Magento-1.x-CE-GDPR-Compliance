@@ -63,12 +63,12 @@
         <template>
             <email>
                 <bpmedia_gdpr_confirm translate="label" module="bpmedia_gdpr">
-                    <label>BPMedia GDPR Confirm</label>
+                    <label>GDPR Confirm</label>
                     <file>bpmedia/gdpr/confirm.html</file>
                     <type>html</type>
                 </bpmedia_gdpr_confirm>
                 <bpmedia_gdpr_success translate="label" module="bpmedia_gdpr">
-                    <label>BPMedia GDPR Success</label>
+                    <label>GDPR Success</label>
                     <file>bpmedia/gdpr/success.html</file>
                     <type>html</type>
                 </bpmedia_gdpr_success>
