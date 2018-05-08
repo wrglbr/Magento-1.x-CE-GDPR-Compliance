@@ -13,6 +13,7 @@ Magento Core code does not currently facilitate this therefore all sites without
 
  
  ## Installation
+ * **Compatible with Magento CE**:  1.8, 1.8.1, 1.9, 1.9.1, 1.9.2, 1.9.3
  
  ### Using modman
  ```
